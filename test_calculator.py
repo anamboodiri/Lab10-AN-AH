@@ -1,4 +1,4 @@
-#https://github.com/TheGator32606
+#https://github.com/anamboodiri/Lab10-AN-AH
 import unittest
 from calculator import *
 
