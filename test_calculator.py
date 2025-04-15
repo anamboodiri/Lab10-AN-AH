@@ -7,7 +7,7 @@ class TestCalculator(unittest.TestCase):
     # Partner 2
     def test_add(self): # 3 assertions
         self.assertEqual(add(1, 2), 3)
-        self.assertEqual(add(9, 10), 21)
+        self.assertEqual(add(9, 10), 19)
         self.assertEqual(add(18, 9), 27)
     def test_subtract(self): # 3 assertions
         self.assertEqual(subtract(1, 2), -1)
@@ -18,21 +18,21 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 1
     def test_multiply(self):  # 3 assertions
-        self.assertEqual(multiply(4, 5), 20)
-        self.assertEqual(multiply(-3, 7), -21)
-        self.assertEqual(multiply(0, 99), 0)
+        self.assertEqual(mul(4, 5), 20)
+        self.assertEqual(mul(-3, 7), -21)
+        self.assertEqual(mul(0, 99), 0)
 
     def test_divide(self):  # 3 assertions
-        self.assertEqual(divide(10, 2), 5)
-        self.assertEqual(divide(-12, 3), -4)
-        self.assertEqual(divide(7.5, 2.5), 3.0)
+        self.assertEqual(div(10, 2), 5)
+        self.assertEqual(div(-12, 3), -4)
+        self.assertEqual(div(7.5, 2.5), 3.0)
     ##########################
 
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion
-        self.assertEqual(divide(5, 0), 0)
-        self.assertEqual(divide(15, 0), 0)
-        self.assertEqual(divide(90, 0), 0)
+        self.assertEqual(div(5, 0), 0)
+        self.assertEqual(div(15, 0), 0)
+        self.assertEqual(div(90, 0), 0)
     #     # call division function inside, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #     div(0, 5)
